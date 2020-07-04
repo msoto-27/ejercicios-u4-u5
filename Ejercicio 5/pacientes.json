@@ -1,0 +1,25 @@
+{
+    "__class__": "ManejadorPacientes",
+    "pacientes": [
+        {
+            "__class__": "Paciente",
+            "__atributos__": {
+                "apellido": "Perez",
+                "nombre": "Juan",
+                "telefono": "(264)4777222",
+                "altura": 180.0,
+                "peso": 70.0
+            }
+        },
+        {
+            "__class__": "Paciente",
+            "__atributos__": {
+                "apellido": "Diaz",
+                "nombre": "Luis",
+                "telefono": "(264)5111222",
+                "altura": 200.0,
+                "peso": 101.3
+            }
+        }
+    ]
+}
