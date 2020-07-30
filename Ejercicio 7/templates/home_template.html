@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página principal</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    </head>
+    <body>
+        <h1>Menú principal</h1>
+        <div class="container">
+            <h2>Has iniciado sesión como {% block tipo %}{% endblock %}</h2>
+            <h3>Selecciona la funcionalidad que deseas realizar</h3>
+            <ul>
+                {% block funcionalidades %}{% endblock %}
+            </ul>
+        </div>	
+    </body>
+</html>

@@ -1,0 +1,6 @@
+{% extends "home_template.html" %}
+{% block tipo %}Mozo{% endblock %}
+{% block funcionalidades %}
+    <li><a href="{{ url_for('nuevo_pedido') }}">Crear nuevo pedido</a></li>
+    <li><a href="{{ url_for('listar_pedidos') }}">Listar pedidos en curso</a></li>
+{% endblock %}

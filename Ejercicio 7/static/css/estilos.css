@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #020029;
+}
+
+header {
+  background-color: #DFB887;
+  height: 10%;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 2%;
+}
+
+h1 {
+    font-size: 2.5em;
+	text-align: center;
+	color: #377ba8; 
+}
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+	margin-left: 2em; 
+	color: #123A42;
+}
+
+button {
+    border: 0px;
+    background-color: #76CADC;
+    color: #000;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: #555;
+    color: white;
+}
+
+td button {
+    border: 0px;
+    background-color: #76CADC;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%
+}
+
+form td {
+    margin: 0;
+    padding: 0;
+}
+
+form textarea {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background-color: #76CADC;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 1.10em;
+  padding-top: 5px;
+  width: 50%;
+}
+
+th, td {
+  margin: 0 auto;
+  text-align: center;
+}
+
+th {
+  padding-top:
+  padding-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.container {
+  padding-top: 2%;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #76CADC;
+  text-align: center;
+}
+
+.container label { 
+	font-weight: bold; 
+	margin-bottom: 2em; 
+	margin-left: 2em; 
+	color: #123A42;
+}
+.container input { 
+	margin-bottom: 1em; 
+	margin-left: 2em;
+}
+
+.container textarea { 
+	min-height: 12em; 
+	resize: vertical; 
+	margin-left: 2em;
+}
+.container select { 
+	margin-bottom: 1em; 
+	margin-left: 4em;
+}
+
+.errorbox {
+  border: 1px solid red;
+  padding-top: 1%;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #e8b0b0;
+}
+.errorbox label { 
+	font-weight: bold; 
+	margin-bottom: 2em; 
+	margin-left: 2em; 
+}
+
+.clickable {
+    border: 0px;
+    background-color: #00d1ff;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%
+}

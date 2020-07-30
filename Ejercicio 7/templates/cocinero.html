@@ -1,0 +1,5 @@
+{% extends "home_template.html" %}
+{% block tipo %}Cocinero{% endblock %}
+{% block funcionalidades %}
+    <li><a href="{{ url_for('preparacion_items') }}">Marcar items como completados</a></li>
+{% endblock %}

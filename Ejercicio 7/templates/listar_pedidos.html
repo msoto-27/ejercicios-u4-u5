@@ -1,0 +1,30 @@
+{% extends "base_template.html" %}
+{% block head %}Lista de pedidos{% endblock %}
+{% block titulo %}Lista de pedidos en curso{% endblock %}
+{% block contenido %}
+    <table>
+        <thead>
+            <tr>
+                <th>Mesa</th>
+                <th>DNI de Mozo</th>
+                <th>Items pedidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pedido in pedidos %}
+                <tr>
+                    <td>{{ pedido.mesa }}</td>
+                    <td>{{ pedido.dni_mozo }}</td>
+                    <td>
+                        <ul>
+                            {% for item in pedido.items %}
+                                <li>{{ item.producto.nombre }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+{% endblock %}

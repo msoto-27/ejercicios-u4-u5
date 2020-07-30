@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Inicio de sesión</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/estilos.css')}}">
+    </head>
+    <body>
+        <h1>Inicio de sesión</h1>
+        <form action = "{{ url_for('home') }}" method = "post" class = "container">
+            <label for = "dni">DNI</label><br>
+            <input type = "text" name = "dni" /><br>
+            <label for = "contraseña">Contraseña</label><br>
+            <input type = "password" name = "contraseña" /><br>
+            <br>
+            <input type = "submit" value = "Ingresar" />
+        </form>
+        <br><br>
+        {% if error == "True": %}
+            <div class="errorbox">
+                <h3>Error</h3>
+                <p style="text-align: center">Los datos ingresados son incorrectos</p>
+                <br>
+            </div>
+        {% endif %}
+    </body>
+</html>
